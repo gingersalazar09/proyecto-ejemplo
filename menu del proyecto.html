@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proyecto Área Técnica</title>
+  <style>
+    body {
+      background-color: #f2f7fa;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* Título con degradado rojo, azul, amarillo y azul */
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(
+        to right,
+        #ff0000,
+        #0000ff,
+        #ffff00,
+        #0000ff
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      padding: 20px;
+      margin: 0;
+    }
+
+    /* Logo y datos */
+    .header-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .header-info img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+    .header-info .text {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.3;
+      text-align: left;
+
+      background-color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    /* Menú principal aesthetic */
+    .menu-wrapper {
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: inline-block;
+      border-radius: 12px;
+    }
+    .principal-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .principal-menu > li {
+      display: inline-block;
+      position: relative;
+      margin: 0 8px;
+    }
+    .principal-menu > li > a {
+      display: block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .principal-menu > li:hover > a {
+      transform: scale(1.05);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .btn-diseno { background-color: #b3e5fc; }
+    .btn-bd { background-color: #c8e6c9; }
+    .btn-redes { background-color: #e1f5fe; }
+    .btn-soporte { background-color: #ffccbc; }
+    .btn-fol { background-color: #e1bee7; }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-color: #fffde7;
+      padding: 5px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 10;
+    }
+    .sub-menu li {
+      width: 160px;
+    }
+    .sub-menu li a {
+      display: block;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.2s;
+    }
+    .sub-menu li a:hover {
+      background-color: #fff9c4;
+    }
+    .principal-menu li:hover .sub-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PROYECTO DE AREA TECNICA INFORMATICA 2025-2026</h1>
+
+  <div class="header-info">
+    <img src="D:\diseño web\imagenes\nicolas.png" alt="Logo del Colegio" />
+    <div class="text">
+      Nombre: Ginger Salazar<br />
+      Curso: 3ro “M”
+    </div>
+  </div>
+
+  <div class="menu-wrapper">
+    <ul class="principal-menu">
+      <li><a href="#" class="btn-diseno">Diseño Web</a>
+        <ul class="sub-menu">
+          <li><a href="file:///D:/dise%C3%B1o%20web/eje.html">TRIMESTRE 1</a></li>
+          <li><a href="#">TRIMESTRE 2</a></li>
+          <li><a href="#">TRIMESTRE 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn-bd">Programación y Base de Datos</a>
+        <ul class="sub-menu">
+          <li><a href="#">TRIMESTRE 1</a></li>
+          <li><a href="#">TRIMESTRE 2</a></li>
+          <li><a href="#">TRIMESTRE 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn-redes">Sistemas Operativos y Redes</a>
+        <ul class="sub-menu">
+          <li><a href="#">TRIMESTRE 1</a></li>
+          <li><a href="#">TRIMESTRE 2</a></li>
+          <li><a href="#">TRIMESTRE 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn-soporte">Soporte Técnico</a>
+        <ul class="sub-menu">
+          <li><a href="#">TRIMESTRE 1</a></li>
+          <li><a href="#">TRIMESTRE 2</a></li>
+          <li><a href="#">TRIMESTRE 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn-fol">FOL</a>
+        <ul class="sub-menu">
+          <li><a href="#">TRIMESTRE 1</a></li>
+          <li><a href="#">TRIMESTRE 2</a></li>
+          <li><a href="#">TRIMESTRE 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="btn-fol">Aplicaciones Ofimáticas Locales y en linea</a>
+        <ul class="sub-menu">
+          <li><a href="#">TRIMESTRE 1</a></li>
+          <li><a href="#">TRIMESTRE 2</a></li>
+          <li><a href="#">TRIMESTRE 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
